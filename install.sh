@@ -19,7 +19,7 @@ sed -e ':a' -e 'N' -e '$!ba' -e 's/<!--\n*[ ]*\(<[^>]*>\n*[ ]*<[^>]*>ENABLE_JSON
 cat ./webapps/geoserver/WEB-INF/w.xml > ./webapps/geoserver/WEB-INF/web.xml
 rm ./webapps/geoserver/WEB-INF/w.xml
 
-echo "Remove pom.xml to avoid Maven builds? [y/n] (n): \c";
+echo "Remove pom.xml to avoid Maven builds? [y/n] (n): ";
 read answer
 
 if [ "$answer" == "y" ]
