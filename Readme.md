@@ -27,7 +27,7 @@ That's it. Deploying will take some time, so I suggest you putting your `.shp`s,
 5. `cd` into the repo dir
 6. run following command
 
-```sh
+```shell
 $ bash <(curl -s https://raw.githubusercontent.com/w8r/openshift-geoserver/master/install.sh) 2>&1
 ```
 
