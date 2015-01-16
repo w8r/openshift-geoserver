@@ -1,8 +1,8 @@
 #!/bin/sh
 
 # download the file from distro
-echo "Downloading Geoserver 2.5.2 from sourceforge.net..."
-curl -L http://sourceforge.net/projects/geoserver/files/GeoServer/2.5.2/geoserver-2.5.2-war.zip > geoserver.zip
+echo "Downloading Geoserver 2.6.1 from sourceforge.net..."
+curl -L http://sourceforge.net/projects/geoserver/files/GeoServer/2.6.1/geoserver-2.6.1-war.zip > geoserver.zip
 
 echo "Extracting the .war ...";
 mkdir -p geoserver-tmp
