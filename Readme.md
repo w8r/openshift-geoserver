@@ -31,4 +31,4 @@ That's it. Deploying will take some time, so I suggest you putting your `.shp`s,
 $ bash <(curl -s https://raw.githubusercontent.com/w8r/openshift-geoserver/master/install.sh) 2>&1
 ```
 
-It will download the geoserver2.5.2.war from Sourceforge, extract it into the correct folder and as a special present from me, it will enable the much needed `JSONP` output
+It will download the geoserver2.6.3.war from Sourceforge, extract it into the correct folder and as a special present from me, it will enable the much needed `JSONP` output
