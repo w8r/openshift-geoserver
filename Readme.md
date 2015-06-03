@@ -3,6 +3,14 @@
 For everyone who was desperate to run a Geoserver instance on a free hosting to try it out or for some other purpose.
 Openshift is your choice, it offers a free java application hosting with a decent selection of environments and presets. And the most amazing thing is that if get even one `High-CPU gear`, the performance is __really__ good.
 
+## What it does
+
+* Grabs a link to sourcefourge distro from geoserver website (you can choose stable[default] or maintainance release)
+* Downloads `.war` file and unzips it into the `webapps/geoserver` folder, that's where your geoserver will run
+* Grabs the list of available plugins and allows you to select which of them you want to downlad and install
+* Optionally turns on the much needed `JSONP` support [default]
+* Optionally removes `pom.xml` file to disable maven builds on deploy [default]
+
 ## In short
 
 ```shell
@@ -31,4 +39,3 @@ That's it. Deploying will take some time, so I suggest you putting your `.shp`s,
 $ bash <(curl -s https://raw.githubusercontent.com/w8r/openshift-geoserver/master/install.sh) 2>&1
 ```
 
-It will download the geoserver2.6.3.war from Sourceforge, extract it into the correct folder and as a special present from me, it will enable the much needed `JSONP` output
